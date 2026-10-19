@@ -5,7 +5,7 @@
   "description": "Metrochem Pvt Ltd — static company showcase website (plain HTML/CSS/JS, no build step).",
   "scripts": {
     "dev": "sh dev-server.sh",
-    "build": "echo 'Static site — nothing to build'",
-    "build:dev": "echo 'Static site — nothing to build'"
+    "build": "sh build.sh",
+    "build:dev": "sh build.sh"
   }
 }
