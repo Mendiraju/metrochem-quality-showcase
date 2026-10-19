@@ -27,7 +27,7 @@ const NAV = [
   ["Home", "home"], ["About", "about"], ["Capabilities", "capabilities"], ["Quality", "quality"], ["Contact", "contact"],
 ] as const;
 
-export function Logo({ light = false }: { light?: boolean }) {
+function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#home" className="flex items-center gap-3 rounded focus-visible:outline-2 focus-visible:outline-accent" aria-label="Metrochem home">
       <svg viewBox="0 0 40 40" className="h-9 w-9 shrink-0" aria-hidden>
