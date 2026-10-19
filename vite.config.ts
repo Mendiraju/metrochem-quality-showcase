@@ -7,7 +7,16 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    base: "/metrochem-quality-showcase/",
+  },
   tanstackStart: {
+    router: {
+      basepath: "/metrochem-quality-showcase",
+    },
+    prerender: {
+      enabled: true,
+    },
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
